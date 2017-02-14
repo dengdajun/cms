@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.davinci.core.shiro.mapper.ShiroRealmMapper">
+
+	<select id="getRolesByAccount" parameterType="java.lang.String">
+		
+		
+	</select>
+	<select id="getPermissionsByAccount" parameterType="java.lang.String">
+	
+		
+	</select>
+	<select id="getAccount" parameterType="java.lang.String"  resultType="com.davinci.shop.sys.user.model.SysUser">
+		 SELECT
+      <include refid="com.davinci.shop.sys.user.mapper.SysUserMapper.column"/>
+         FROM SYS_ACCOUNT t
+         WHERE t.account= #{account}
+	</select>
+</mapper>

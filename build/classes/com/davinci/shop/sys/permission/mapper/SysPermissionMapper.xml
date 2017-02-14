@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.davinci.shop.sys.permission.mapper.SysPermissionMapper">
+    <sql id="column">
+        t.ID id,
+        t.PARENT_ID parentId,
+        t.PERMISSIONS_NAME permissionsName,
+        t.PERMISSIONS_DESC permissionsDesc,
+    </sql>
+</mapper>
